@@ -5,6 +5,14 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidExercices", "SolidExercices\SolidExercices.csproj", "{97F5966E-4DE4-4158-87CF-F23D670FB76B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidExercices.Tests", "SolidExercices.Tests\SolidExercices.Tests.csproj", "{BED76725-9B11-42EB-87BE-2516652EB674}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C4F4D5F9-E602-441D-BB40-0B95DAF6C15E}"
+	ProjectSection(SolutionItems) = preProject
+		Evaluation.md = Evaluation.md
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,10 @@ Global
 		{97F5966E-4DE4-4158-87CF-F23D670FB76B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97F5966E-4DE4-4158-87CF-F23D670FB76B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97F5966E-4DE4-4158-87CF-F23D670FB76B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED76725-9B11-42EB-87BE-2516652EB674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED76725-9B11-42EB-87BE-2516652EB674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED76725-9B11-42EB-87BE-2516652EB674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED76725-9B11-42EB-87BE-2516652EB674}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
