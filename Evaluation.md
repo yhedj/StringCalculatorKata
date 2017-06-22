@@ -12,6 +12,8 @@ Critères d'évaluation
 
 ATTENTION: ne pas changer le nommage des projets, des classes et méthodes donnés (sauf sur les tests si vous voulez).
 
+A LA FIN DU TP: pensez à pousser vos commits sur votre compte GitHub et envoyer votre dépôt à mon adresse mail.
+
 Réponses aux questions posées
 -----------------------------
 
