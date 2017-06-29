@@ -42,5 +42,6 @@ namespace SolidExercices.Tests
             var result = calculator.Calculate("12*45/7");
             Check.That(result).IsEqualTo(0.5m);
         }
+    
     }
 }
