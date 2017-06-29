@@ -11,10 +11,10 @@ namespace SolidExercices
             return calcul.Contains('*');
         }
 
-        public decimal Calculate(string operation)
+        public decimal Calculate(string calcul)
         {
-            
-                String[] nb = operation.Split('*');
+
+            String[] nb = calcul.Split('*');
                 var resultat = Convert.ToDecimal(nb[0]);
             foreach (var number in nb.Skip(1).ToArray())
                 {
