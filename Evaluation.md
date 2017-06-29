@@ -17,11 +17,11 @@ A LA FIN DU TP: pensez à pousser vos commits sur votre compte GitHub et envoyer 
 Réponses aux questions posées
 -----------------------------
 
-Q1)
+Q1) On peut éviter les répition de if en factorisant le code par le biais de classe.
 
-Q2)
+Q2)C'est le principe d'ouverture et fermeture du code. Il est ouvert à l'extension et fermer lors de la modification.
 
-Q3)
+Q3)Il faut appliquer les principes de substitution de Liskov. Le Calculator doit pouvoir instancier différents opérateurs.
 
 Q4)
 
