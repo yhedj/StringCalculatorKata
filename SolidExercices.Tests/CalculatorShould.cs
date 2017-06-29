@@ -14,7 +14,7 @@ namespace SolidExercices.Tests
         }
 
         [Test]
-        public void CalculateADiv()
+        public void CalculateASous()
         {
             var calculator = new Calculator();
             var result = calculator.Calculate("3,3-2,3");
@@ -29,7 +29,7 @@ namespace SolidExercices.Tests
             Check.That(result).IsEqualTo(2.3);
         }
         [Test]
-        public void CalculateASous()
+        public void CalculateADiv()
         {
             var calculator = new Calculator();
             var result = calculator.Calculate("1/2");
