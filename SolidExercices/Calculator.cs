@@ -7,16 +7,11 @@ namespace SolidExercices
     {
         public decimal Calculate(string operation)
         {
-            if (operation.Contains("+"))
-            {
-                String[] nb = operation.Split('+');
-                var resultat = Convert.ToDecimal(nb[0]);
+            IOperations addition = new Addition();
 
-                foreach (var number in nb.Skip(1).ToArray())
-                {
-                    resultat += Convert.ToDecimal(number);
-                }
-                return resultat;
+            if (addition.CaractCalculate(operation))
+            {
+                return addition.Calculate(operation);
             }
             if(operation.Contains("-"))
             {
