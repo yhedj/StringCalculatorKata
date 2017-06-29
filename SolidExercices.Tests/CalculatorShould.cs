@@ -35,5 +35,12 @@ namespace SolidExercices.Tests
             var result = calculator.Calculate("1/2");
             Check.That(result).IsEqualTo(0.5);
         }
+        [Test]
+        public void CalculateMoreOperations()
+        {
+            var calculator = new Calculator();
+            var result = calculator.Calculate("12*45/7");
+            Check.That(result).IsEqualTo(0.5);
+        }
     }
 }

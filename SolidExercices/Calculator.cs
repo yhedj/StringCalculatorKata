@@ -5,7 +5,7 @@ namespace SolidExercices
 {
     public class Calculator
     {
-        public double Calculate(string operation)
+        public double? Calculate(string operation)
         {
             double resultat = 0;
             if (operation.Contains("+"))
@@ -48,7 +48,11 @@ namespace SolidExercices
                 }
                 return resultat;
             }
-            return resultat;
+            else
+            {
+                Console.WriteLine("L'opération n'est pas prit en charge !");
+                return null;
+            }
 
         }
     }
