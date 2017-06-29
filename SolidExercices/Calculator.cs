@@ -18,7 +18,7 @@ namespace SolidExercices
                 }
                 return resultat;
             }
-            else if(operation.Contains("-"))
+            if(operation.Contains("-"))
             {
                 String[] nb = operation.Split('-');
                 var resultat = Convert.ToDecimal(nb[0]);
@@ -29,7 +29,7 @@ namespace SolidExercices
                 }
                 return resultat;
             }
-            else if (operation.Contains("*"))
+            if (operation.Contains("*"))
             {
                 String[] nb = operation.Split('*');
                 var resultat = Convert.ToDecimal(nb[0]);
@@ -40,7 +40,7 @@ namespace SolidExercices
                 }
                 return resultat;
             }
-            else if (operation.Contains("/"))
+            if (operation.Contains("/"))
             {
                 String[] nb = operation.Split('/');
                 var resultat = Convert.ToDecimal(nb[0]);
@@ -51,11 +51,8 @@ namespace SolidExercices
                 }
                 return resultat;
             }
-            else
-            {
-                Console.WriteLine("L'opération n'est pas prit en charge !");
+            Console.WriteLine("L'opération n'est pas prit en charge !");
                 return 0;
             }
-        }
     }
 }
