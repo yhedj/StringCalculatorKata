@@ -10,7 +10,7 @@ namespace SolidExercices.Tests
         {
             var calculator = new Calculator();
             var result = calculator.Calculate("1+2,3");
-            Check.That(result).IsEqualTo(3.3);
+            Check.That(result).IsEqualTo(3.3m);
         }
 
         [Test]
@@ -26,21 +26,21 @@ namespace SolidExercices.Tests
         {
             var calculator = new Calculator();
             var result = calculator.Calculate("1*2,3");
-            Check.That(result).IsEqualTo(2.3);
+            Check.That(result).IsEqualTo(2.3m);
         }
         [Test]
         public void CalculateADiv()
         {
             var calculator = new Calculator();
             var result = calculator.Calculate("1/2");
-            Check.That(result).IsEqualTo(0.5);
+            Check.That(result).IsEqualTo(0.5m);
         }
         [Test]
         public void CalculateMoreOperations()
         {
             var calculator = new Calculator();
             var result = calculator.Calculate("12*45/7");
-            Check.That(result).IsEqualTo(0.5);
+            Check.That(result).IsEqualTo(0.5m);
         }
     }
 }

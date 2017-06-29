@@ -5,55 +5,57 @@ namespace SolidExercices
 {
     public class Calculator
     {
-        public double? Calculate(string operation)
+        public decimal Calculate(string operation)
         {
-            double resultat = 0;
             if (operation.Contains("+"))
             {
-                String[] nb = operation.Split('+');             
+                String[] nb = operation.Split('+');
+                var resultat = Convert.ToDecimal(nb[0]);
+
                 foreach (var number in nb.Skip(1).ToArray())
                 {
-                    resultat = Convert.ToDouble(nb[0]);
-                    resultat += Convert.ToDouble(number);
+                    resultat += Convert.ToDecimal(number);
                 }
                 return resultat;
             }
             else if(operation.Contains("-"))
             {
                 String[] nb = operation.Split('-');
+                var resultat = Convert.ToDecimal(nb[0]);
+
                 foreach (var number in nb.Skip(1).ToArray())
                 {
-                    resultat = Convert.ToDouble(nb[0]);
-                    resultat = resultat - Convert.ToDouble(number);
+                    resultat = resultat - Convert.ToDecimal(number);
                 }
                 return resultat;
             }
             else if (operation.Contains("*"))
             {
                 String[] nb = operation.Split('*');
+                var resultat = Convert.ToDecimal(nb[0]);
+
                 foreach (var number in nb.Skip(1).ToArray())
                 {
-                    resultat = Convert.ToDouble(nb[0]);
-                    resultat = resultat * Convert.ToDouble(number);
+                    resultat = resultat * Convert.ToDecimal(number);
                 }
                 return resultat;
             }
             else if (operation.Contains("/"))
             {
                 String[] nb = operation.Split('/');
+                var resultat = Convert.ToDecimal(nb[0]);
+
                 foreach (var number in nb.Skip(1).ToArray())
                 {
-                    resultat = Convert.ToDouble(nb[0]);
-                    resultat = resultat / Convert.ToDouble(number);
+                    resultat = resultat / Convert.ToDecimal(number);
                 }
                 return resultat;
             }
             else
             {
                 Console.WriteLine("L'opération n'est pas prit en charge !");
-                return null;
+                return 0;
             }
-
         }
     }
 }
