@@ -13,38 +13,21 @@ namespace SolidExercices
             {
                 return addition.Calculate(operation);
             }
-            if(operation.Contains("-"))
-            {
-                String[] nb = operation.Split('-');
-                var resultat = Convert.ToDecimal(nb[0]);
 
-                foreach (var number in nb.Skip(1).ToArray())
-                {
-                    resultat = resultat - Convert.ToDecimal(number);
-                }
-                return resultat;
+            IOperations soustraction = new Soustraction();
+            if(soustraction.CaractCalculate(operation))
+            {
+                return soustraction.Calculate(operation);
             }
-            if (operation.Contains("*"))
+            IOperations multiplication = new Multiplication();
+            if (multiplication.CaractCalculate(operation))
             {
-                String[] nb = operation.Split('*');
-                var resultat = Convert.ToDecimal(nb[0]);
-
-                foreach (var number in nb.Skip(1).ToArray())
-                {
-                    resultat = resultat * Convert.ToDecimal(number);
-                }
-                return resultat;
+                return multiplication.Calculate(operation);
             }
-            if (operation.Contains("/"))
-            {
-                String[] nb = operation.Split('/');
-                var resultat = Convert.ToDecimal(nb[0]);
 
-                foreach (var number in nb.Skip(1).ToArray())
-                {
-                    resultat = resultat / Convert.ToDecimal(number);
-                }
-                return resultat;
+            IOperations division = new Division();
+            if (division.CaractCalculate(operation))
+            {   return division.Calculate(operation);
             }
             Console.WriteLine("L'opération n'est pas prit en charge !");
                 return 0;
